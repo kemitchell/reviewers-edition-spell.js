@@ -1,7 +1,7 @@
 {
   "name": "reviewers-edition-spell",
   "description": "spell reviewers edition numbers in English",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "dependencies": {
     "number-to-words": "^1.2.1",
