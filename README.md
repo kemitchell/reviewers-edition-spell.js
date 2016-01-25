@@ -43,3 +43,7 @@ assert.equal(
   spell('1.0.0'),
   false)
 ```
+
+This package is bundled with other functions for
+creating and manipulating reviewers editions in
+[reved](https://www.npmjs.com/packages/reved).
