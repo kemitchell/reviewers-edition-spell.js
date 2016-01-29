@@ -1,5 +1,5 @@
 This npm package exports a single function that takes a single
-[reviewers edition][reved] argument and returns a string containing the
+[Reviewers Edition][reved] argument and returns a string containing the
 pronunciation of that edition in English.
 
 [reved]: https://npmjs.com/packages/reviewers-edition-parse
@@ -45,5 +45,5 @@ assert.equal(
 ```
 
 This package is bundled with other functions for
-creating and manipulating reviewers editions in
+creating and manipulating Reviewers Editions in
 [reved](https://www.npmjs.com/packages/reved).
