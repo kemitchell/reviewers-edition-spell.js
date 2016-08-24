@@ -13,27 +13,33 @@ var spell = require('reviewers-edition-spell')
 
 assert.equal(
   spell('1e'),
-  'first edition')
+  'first edition'
+)
 
 assert.equal(
   spell('1e2u'),
-  'first edition, second update')
+  'first edition, second update'
+)
 
 assert.equal(
   spell('1e2u3c'),
-  'first edition, second update, third correction')
+  'first edition, second update, third correction'
+)
 
 assert.equal(
   spell('1e2u3c4d'),
-  'first edition, second update, third correction, fourth draft')
+  'first edition, second update, third correction, fourth draft'
+)
 
 assert.equal(
   spell('1e101d'),
-  'first edition, one hundred first draft')
+  'first edition, one hundred first draft'
+)
 
 assert.equal(
   spell('101e2c'),
-  'one hundred first edition, second correction')
+  'one hundred first edition, second correction'
+)
 ```
 
 The function returns `false` for an invalid argument.
@@ -41,7 +47,8 @@ The function returns `false` for an invalid argument.
 ```javascript
 assert.equal(
   spell('1.0.0'),
-  false)
+  false
+)
 ```
 
 This package is bundled with other functions for
