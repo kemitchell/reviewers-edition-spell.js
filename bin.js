@@ -6,7 +6,7 @@ require('pump')(
   require('through2').obj(function (chunk, encoding, done) {
     var line = chunk.toString(encoding)
     var spelled = spell(line)
-    done(null, (spelled ? spelled : line) + '\n')
+    done(null, (spelled || line) + '\n')
   }),
   process.stdout
 )
