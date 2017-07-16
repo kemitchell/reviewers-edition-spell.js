@@ -12,7 +12,7 @@
     "through2": "^2.0.3"
   },
   "devDependencies": {
-    "defence-cli": "^1.0.5",
+    "defence-cli": "^2.0.1",
     "replace-require-self": "^1.1.0",
     "standard": "^8.0.0"
   },
