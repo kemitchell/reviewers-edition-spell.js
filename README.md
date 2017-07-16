@@ -28,12 +28,12 @@ assert.equal(
 
 assert.equal(
   spell('1e2u3c4d'),
-  'first edition, second update, third correction, fourth draft'
+  'fourth draft of first edition, second update, third correction'
 )
 
 assert.equal(
   spell('1e101d'),
-  'first edition, one hundred first draft'
+  'one hundred first draft of first edition'
 )
 
 assert.equal(

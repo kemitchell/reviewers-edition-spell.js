@@ -7,12 +7,19 @@ var numbers = require('reviewers-edition-parse/numbers')
 function reviewersEditionCompare (edition) {
   var parsed = parse(edition)
   if (parsed) {
-    return numbers.reduce(function (components, number) {
-      return parsed.hasOwnProperty(number)
-      ? components.concat(ordinal(parsed[number]) + ' ' + number)
-      : components
-    }, [])
-    .join(', ')
+    return (
+      (parsed.draft ? (ordinal(parsed.draft) + ' draft of ') : '') +
+      numbers
+        .filter(function (number) {
+          return number !== 'draft'
+        })
+        .reduce(function (components, number) {
+          return parsed.hasOwnProperty(number)
+          ? components.concat(ordinal(parsed[number]) + ' ' + number)
+          : components
+        }, [])
+        .join(', ')
+    )
   } else {
     return false
   }
