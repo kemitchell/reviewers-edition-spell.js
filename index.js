@@ -1,10 +1,8 @@
-module.exports = reviewersEditionCompare
-
 var ordinal = require('number-to-words').toWordsOrdinal
 var parse = require('reviewers-edition-parse')
 var numbers = require('reviewers-edition-parse/numbers')
 
-function reviewersEditionCompare (edition) {
+module.exports = function reviewersEditionCompare (edition) {
   var parsed = parse(edition)
   if (parsed) {
     return (
